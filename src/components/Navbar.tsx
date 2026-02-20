@@ -45,12 +45,12 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a
+          {/* <a
             href="#contact"
             className="bg-primary text-primary-foreground px-5 py-2 rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors"
           >
             Book Now
-          </a>
+          </a> */}
         </div>
 
         {/* Mobile toggle */}
