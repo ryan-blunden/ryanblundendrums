@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Play, ArrowDown } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/ryan-main-3.jpg";
 
 const Hero = () => {
   return (
@@ -38,10 +38,10 @@ const Hero = () => {
         >
           Professional drummer for live events, studio sessions & touring.
           <br className="hidden md:block" />
-          30+ years of high-energy performance across every stage.
+          30+ years of high-energy performances.
         </motion.p>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
@@ -59,7 +59,7 @@ const Hero = () => {
           >
             <Play size={18} /> Watch Performance
           </a>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* Scroll indicator */}

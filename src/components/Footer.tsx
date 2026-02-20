@@ -13,23 +13,23 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <a href="#" aria-label="YouTube" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.youtube.com/@RyanBlundenDrums" aria-label="YouTube" className="text-muted-foreground hover:text-primary transition-colors">
               <Youtube size={22} />
             </a>
-            <a href="#" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.instagram.com/ryanblundendrums/" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors">
               <Instagram size={22} />
             </a>
-            <a href="#" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.facebook.com/ryan.blunden.2025" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors">
               <Facebook size={22} />
             </a>
           </div>
         </div>
 
-        <div className="text-center mt-8 pt-8 border-t border-border">
+        {/* <div className="text-center mt-8 pt-8 border-t border-border">
           <p className="text-muted-foreground text-xs">
             © {new Date().getFullYear()} Ryan Blunden. All rights reserved. Professional drummer for hire in Brisbane and beyond.
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

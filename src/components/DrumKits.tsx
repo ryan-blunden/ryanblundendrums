@@ -3,10 +3,10 @@ import { useRef } from "react";
 import { VolumeX, Volume1, Volume2, Cpu } from "lucide-react";
 
 const setups = [
-  { icon: VolumeX, title: "Silent / Ultra-Quiet", desc: "Electronic kit with mesh heads for venues with strict noise limits. Full sound through PA, zero stage volume.", tag: "Restaurants · Rooftops · Hotels" },
-  { icon: Volume1, title: "Low-Volume Acoustic", desc: "Acoustic kit with low-volume cymbals and dampening. Warm, natural tone at a fraction of the volume.", tag: "Small venues · Cocktail events" },
-  { icon: Volume2, title: "Full Acoustic", desc: "Professional acoustic kit, fully mic'd and ready for any stage. Powerful, dynamic, and commanding.", tag: "Concerts · Festivals · Large events" },
-  { icon: Cpu, title: "Hybrid / Electronic", desc: "Acoustic core with electronic triggers and pads. Versatile setup for modern productions requiring backing tracks or click.", tag: "Productions · Corporate · Touring" },
+  { icon: VolumeX, title: "Ultra-Quiet", desc: "Roland Octapad SPD-30 for ultra-low volume can compact setup."},
+  { icon: Cpu, title: "Low Stage-volume Electric Kit", desc: "Roland VAD 506 with mesh with full-size shells with all sound routed through PA."},
+  { icon: Volume1, title: "Compact Acoustic Kit", desc: "Pearl Rhythm traveller kit for tight and lower-volume settings wanting acoustic drums."},
+  { icon: Volume2, title: "Full Acoustic Kit", desc: "The real deal. Mapex Black Panther kit in 4, 5 and 6 piece setups." }
 ];
 
 const DrumKits = () => {
@@ -22,12 +22,12 @@ const DrumKits = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="text-primary text-sm tracking-[0.2em] uppercase mb-3 font-body">Setup Versatility</p>
+          {/* <p className="text-primary text-sm tracking-[0.2em] uppercase mb-3 font-body">Setup Versatility</p> */}
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
             The Right Kit for Every Venue
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            I adapt my setup to match your venue's requirements — from whisper-quiet to full power.
+            From ultra-quiet electronic kits for intimate venues to full acoustic rigs for festival stages and everything in between.
           </p>
         </motion.div>
 

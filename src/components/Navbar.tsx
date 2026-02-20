@@ -4,11 +4,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { label: "About", href: "#about" },
+  { label: "Gallery", href: "#gallery" },
   { label: "Videos", href: "#videos" },
-  { label: "Services", href: "#services" },
-  { label: "Setups", href: "#setups" },
-  { label: "Repertoire", href: "#repertoire" },
-  { label: "FAQ", href: "#faq" },
+  // { label: "Services", href: "#services" },
+  { label: "Drum Kits", href: "#setups" },
+  // { label: "Repertoire", href: "#repertoire" },
+  // { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
 

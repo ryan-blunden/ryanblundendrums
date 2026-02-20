@@ -17,7 +17,7 @@ const Services = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="services" className="py-24 md:py-32">
+    <section id="services" className="py-24 md:py-32 bg-secondary/30">
       <div className="container mx-auto px-4" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -25,8 +25,8 @@ const Services = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="text-primary text-sm tracking-[0.2em] uppercase mb-3 font-body">Services</p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">What I Offer</h2>
+          {/* <p className="text-primary text-sm tracking-[0.2em] uppercase mb-3 font-body">Services</p> */}
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">Services</h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">

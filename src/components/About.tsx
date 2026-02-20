@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-const stats = [
-  { value: "30+", label: "Years Playing" },
-  { value: "500+", label: "Live Events" },
-  { value: "15+", label: "Countries Toured" },
-  { value: "50+", label: "Artists Collaborated" },
-];
+// const stats = [
+//   { value: "30+", label: "Years Playing" },
+//   { value: "500+", label: "Live Events" },
+//   { value: "15+", label: "Countries Toured" },
+//   { value: "50+", label: "Artists Collaborated" },
+// ];
 
 const About = () => {
   const ref = useRef(null);
@@ -28,19 +28,25 @@ const About = () => {
           </h2>
           <div className="space-y-5 text-muted-foreground text-lg leading-relaxed">
             <p>
-              With over 30 years of professional drumming experience, I've performed across every setting
-              imaginable — from intimate jazz clubs to festival main stages, elegant weddings to high-energy
-              corporate events. My career has taken me across Australia and through extensive tours of Europe.
+              There's nothing like the feeling of being behind the kit when the band is on fire and the crowd are loving it — and after 30+ years of drumming, that feeling is as special as it ever was.
             </p>
             <p>
-              I bring deep musical versatility, having spent decades playing across rock, pop, funk, soul, jazz,
-              blues, and everything in between. Every performance is approached with the same commitment:
-              precision, energy, and an unwavering professionalism that clients and bandmates can rely on.
+              Hey! I’m Ryan. I’m based in Brisbane, Australia, and with over 30 years of professional drumming experience, I’ve performed in just about every setting imaginable — from tiny clubs to dive bars, festival stages, and a stack of venues across Australia and Europe.
+            </p>
+            <p>
+              I'll be honest. My ability to "chop" isn't amazing. And my bag of stick tricks is a bit on the light side. And Jazz isn't really my thing.
+            </p>
+            <p>But what I am known for — is bringing up the energy and vibes in any room or setting I play in. I thrive on creating an atmosphere that gets everyone moving and having a great time.</p>
+            <p>
+              I have a set of skills and intensity that lends itself well to heavier forms of music. But the genre doesn't really matter to me.
+            </p>
+            <p>
+              It's about playing in the style that best suits the band, the occasion, and the crowd.
             </p>
           </div>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.3 }}
@@ -52,7 +58,7 @@ const About = () => {
               <div className="text-muted-foreground text-sm">{stat.label}</div>
             </div>
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

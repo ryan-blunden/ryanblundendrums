@@ -4,17 +4,13 @@ import { X } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
+import gallery4 from "@/assets/gallery-4.jpg"; 
 
 const images = [
-  { src: gallery1, alt: "Close-up performance shot" },
-  { src: gallery2, alt: "Festival main stage" },
-  { src: gallery3, alt: "Studio session" },
-  { src: gallery4, alt: "Wedding reception performance" },
-  { src: gallery5, alt: "Corporate gala event" },
-  { src: gallery6, alt: "Full drum kit overhead" },
+  { src: gallery1, alt: "Seems to be a fan of Ziljian cymbals" },
+  { src: gallery2, alt: "Trying not to look awkward." },
+  { src: gallery3, alt: "Drummer concentration face." },
+  { src: gallery4, alt: "The mighty Mapex Black Panther." },
 ];
 
 const PhotoGallery = () => {
@@ -24,7 +20,7 @@ const PhotoGallery = () => {
 
   return (
     <>
-      <section className="py-24 md:py-32 bg-secondary/30">
+      <section id="gallery" className="py-24 md:py-32 bg-secondary/30">
         <div className="container mx-auto px-4" ref={ref}>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -32,18 +28,18 @@ const PhotoGallery = () => {
             transition={{ duration: 0.7 }}
             className="text-center mb-16"
           >
-            <p className="text-primary text-sm tracking-[0.2em] uppercase mb-3 font-body">Gallery</p>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">On Stage & In Session</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">Gallery</h2>
+            {/* <p className="text-primary mt-4 text-sm tracking-[0.2em] uppercase mb-3 font-body">These are a bit old. My hair is longer now.</p> */}
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             {images.map((img, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.5, delay: 0.1 * i }}
-                className="relative aspect-square overflow-hidden rounded-lg cursor-pointer group"
+                className="relative aspect-[3/2] overflow-hidden rounded-lg cursor-pointer group"
                 onClick={() => setLightbox(i)}
               >
                 <img
